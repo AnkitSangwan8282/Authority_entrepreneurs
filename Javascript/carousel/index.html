@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+    }
+    .pic_container {
+      position: relative;
+      width: 100%;
+      height: 600px;
+      overflow: hidden;
+    }
+
+    .pic {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: none;
+    }
+
+    .pic img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #next_btn,
+    #prev_btn {
+      font-size: 80px;
+      font-weight: bolder;
+    }
+
+    .active {
+      display: block;
+    }
+  </style>
+  <body>
+    <button id="prev_btn"><</button>
+    <div class="pic_container">
+      <div class="pic">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHTjLYVHXcGE7ytebQV9OaMDk6pNf_lwgiGA&usqp=CAU"
+          width="400px"
+          height="200px"
+          alt="Image 1"
+        />
+      </div>
+      <div class="pic">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Z0iLQ1fTwM42IAFuqVvcYCmVJcLNqhrxkQ&usqp=CAU"
+          width="400px"
+          height="200px"
+          alt="Image 2"
+        />
+      </div>
+      <div class="pic">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ8O9zdwD5jSnPpMjxNPP045Bbxtb3Cr6_TA&usqp=CAU"
+          height="200px"
+          width="400px"
+          alt="Image 3"
+        />
+      </div>
+    </div>
+    <button id="next_btn">></button>
+  </body>
+  <script src="./index.js">
+  </script>
+</html>
